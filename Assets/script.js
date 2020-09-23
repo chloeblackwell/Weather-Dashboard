@@ -41,7 +41,7 @@ $('.searchButton').on('click', function () {
 
         // UV Index API 
 
-        var UV = "http://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "&lon=" + response.coord.lon + "&appid=3fdb944f27f631c445b45c39a8acbb8d";
+        var UV = "https://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "&lon=" + response.coord.lon + "&appid=3fdb944f27f631c445b45c39a8acbb8d";
 
         // Appends to Current Temp 
 
@@ -52,8 +52,8 @@ $('.searchButton').on('click', function () {
             console.log(response);
 
             var currentUV = $("<p>" + "UV Index: " + response.value + "</p>");
-            currentUV.attr('id', 'UV');
             currentTemp.append(currentUV);
+            currentUV.attr('id', 'UV');
 
             if (response.value > 9) {
 
