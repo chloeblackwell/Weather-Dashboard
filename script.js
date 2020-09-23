@@ -60,7 +60,9 @@ $('.searchButton').on('click', function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
-            var currentUV = currentTemp.append("<p>" + "UV Index: " + response.value + "</p>");
+
+            var currentUV = $("<p>" + "UV Index: " + response.value + "</p>");
+            currentUV.attr('id', 'UV');
             currentTemp.append(currentUV);
 
             if (response.value > 9) {

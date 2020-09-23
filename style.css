@@ -19,7 +19,9 @@ li {
 .fiveDayCard {
   margin-top: 50px;
 }
-
+#UV {
+  width: 150px;
+}
 .low {
   background-color: skyblue;
 }
