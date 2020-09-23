@@ -1,0 +1,33 @@
+.searchButton {
+  color: white;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.fiveDayColour {
+  background-color: teal;
+  color: white;
+  width: 300px;
+}
+
+.fiveDayCard {
+  margin-top: 50px;
+}
+
+.low {
+  background-color: skyblue;
+}
+
+.moderate {
+  background-color: orange;
+}
+
+.high {
+  background-color: red;
+}
