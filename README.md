@@ -26,7 +26,7 @@ This application does not have a license.
 
 ## Link to the webpage 
 
-<a >Link to the webpage</a>
+<a href="https://chloeblackwell.github.io/Weather-Dashboard/">Link to the webpage</a>
 
 
 ## Author 
