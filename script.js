@@ -1,13 +1,3 @@
-//for (var i = 0; i < localStorage.length; i++) {
-
-
-// var cityName = localStorage.getItem(i);
-//  var city = $(".list-group").addClass("list-items");
-//  city.append("<li>" + cityName + "<li>");
-
-// console.log(cityName);
-//}
-
 // Click event for the search button 
 
 $('.searchButton').on('click', function () {
