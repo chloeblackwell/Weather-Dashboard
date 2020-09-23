@@ -17,8 +17,10 @@ SO THAT I can plan a trip accordingly
 * VS Code (hhtps://code.visualstudio.com/)
 * Terminal 
 
-
 ## Screenshots 
+
+<img src="Assets/images/Start.png">
+<img src="Assets/images/Final.png">
 
 ## License 
 
@@ -27,7 +29,6 @@ This application does not have a license.
 ## Link to the webpage 
 
 <a href="https://chloeblackwell.github.io/Weather-Dashboard/">Link to the webpage</a>
-
 
 ## Author 
 
