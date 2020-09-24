@@ -1,11 +1,23 @@
+var location = [];
+
+$(document).ready(function () {
+
+    var cityName = JSON.parse(localStorage.getItem('city'));
+    console.log(cityName);
+
+    if (cityName) {
+        var city = $(".list-group").addClass("list-items");
+        city.append("<li>" + cityName + "<li>");
+    }
+
+
+})
+
 // Click event for the search button 
 
-$('.searchButton').on('click', function () {
-
+$('.searchButton').on('click', function (event) {
+    event.preventDefault();
     var userInput = $('.userInput').val();
-
-    var cityName = localStorage.getItem('city');
-    console.log(cityName);
 
 
     // Variables of the API 
@@ -22,8 +34,11 @@ $('.searchButton').on('click', function () {
 
         var city = $(".list-group").addClass("list-items");
         city.append("<li>" + response.name + "<li>");
+        console.log("test", response.name)
+        location.push(response.name);
 
-        localStorage.setItem('city', response.name);
+        localStorage.setItem('city', JSON.stringify(location));
+
 
         var currentForecast = $(".currentCard").append("<div>").addClass("forecast");
         var currentCity = currentForecast.append("<p>");
