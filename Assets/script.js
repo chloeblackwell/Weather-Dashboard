@@ -1,4 +1,4 @@
-var location = [];
+var userCity = [];
 
 $(document).ready(function () {
 
@@ -35,9 +35,9 @@ $('.searchButton').on('click', function (event) {
         var city = $(".list-group").addClass("list-items");
         city.append("<li>" + response.name + "<li>");
         console.log("test", response.name)
-        location.push(response.name);
+        userCity.push(response.name);
 
-        localStorage.setItem('city', JSON.stringify(location));
+        localStorage.setItem('city', JSON.stringify(userCity));
 
 
         var currentForecast = $(".currentCard").append("<div>").addClass("forecast");
